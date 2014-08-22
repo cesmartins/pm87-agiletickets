@@ -3,6 +3,6 @@
 	<title>VRaptor Scaffold Project</title>
 </head>
 <body>
-	It works!!
+	It works!!  ok
 </body>
 </html>
