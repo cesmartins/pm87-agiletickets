@@ -3,6 +3,9 @@ package br.com.caelum.agiletickets.models;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import javax.validation.constraints.AssertTrue;
+
+import org.joda.time.DateTime;
 import org.junit.Test;
 
 public class EspetaculoTest {
@@ -81,4 +84,26 @@ public class EspetaculoTest {
 		return sessao;
 	}
 	
+	
+/*	@Test
+	private void criarSessaoDiariaDataInicioIgualDataFim(){
+		DateTime dtEscolhida = new DateTime();
+		Espetaculo espetaculo = new Espetaculo();
+		//espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
+		
+		
+		
+		
+		assertTrue(espetaculo.getSessoes().get(0).getIngressosDisponiveis().equals(dtEscolhida));
+		
+
+	}*/
+
+	private Sessao sessaoDiariaHoje(DateTime dtEscolhida) {
+		Sessao sessao = new Sessao();
+		
+		sessao.setInicio(dtEscolhida);
+		sessao.setDuracaoEmMinutos(30);
+		return sessao;
+	}
 }
