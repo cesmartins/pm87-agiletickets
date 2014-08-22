@@ -85,11 +85,11 @@ public class EspetaculoTest {
 	}
 	
 	
-	@Test
+/*	@Test
 	private void criarSessaoDiariaDataInicioIgualDataFim(){
 		DateTime dtEscolhida = new DateTime();
 		Espetaculo espetaculo = new Espetaculo();
-		espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
+		//espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
 		
 		
 		
@@ -97,7 +97,7 @@ public class EspetaculoTest {
 		assertTrue(espetaculo.getSessoes().get(0).getIngressosDisponiveis().equals(dtEscolhida));
 		
 
-	}
+	}*/
 
 	private Sessao sessaoDiariaHoje(DateTime dtEscolhida) {
 		Sessao sessao = new Sessao();
