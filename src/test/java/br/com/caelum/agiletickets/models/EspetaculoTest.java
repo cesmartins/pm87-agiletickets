@@ -89,7 +89,10 @@ public class EspetaculoTest {
 	private void criarSessaoDiariaDataInicioIgualDataFim(){
 		DateTime dtEscolhida = new DateTime();
 		Espetaculo espetaculo = new Espetaculo();
-		espetaculo.criaSessoes(inicio, fim, horario, periodicidade)
+		espetaculo.criaSessoes(inicio, fim, horario, periodicidade);
+		
+		
+		
 		
 		assertTrue(espetaculo.getSessoes().get(0).getIngressosDisponiveis().equals(dtEscolhida));
 		
